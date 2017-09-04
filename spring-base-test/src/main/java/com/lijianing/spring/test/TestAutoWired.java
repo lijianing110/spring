@@ -14,7 +14,5 @@ public class TestAutoWired {
         ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfigAutoWired.class);
         Bean2 bean2 = context.getBean(Bean2.class);
         bean2.execute();
-        Bean4 bean4 = context.getBean(Bean4.class);
-        bean4.execute();
     }
 }
