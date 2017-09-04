@@ -1,5 +1,7 @@
 package com.lijianing.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  * Created by lijianing on 17-8-31.
  */

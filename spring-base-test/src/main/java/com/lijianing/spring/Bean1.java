@@ -1,5 +1,7 @@
 package com.lijianing.spring;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 /**
@@ -7,7 +9,13 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class Bean1 {
+    @Value("${fuck}")
+    private String str;
+
+    public Bean1() {
+    }
+
     public void play() {
-        System.out.println("auto wire fucks");
+        System.out.println(str);
     }
 }
